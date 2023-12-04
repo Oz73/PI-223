@@ -1,0 +1,162 @@
+body{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Text{
+    padding-left: 10px;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu_button{
+    margin-right: 20px;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+    left: -40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #798dff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.button_dropdown {
+    background-color: #0b08c4;
+    color: white;
+    padding: 5px 20px;
+    width: 100px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.button_header{
+    background-color: #0b08c4;
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.card_container {
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 40px;
+    width: calc(33.33% - 40px);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-radius: 3%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.main_img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.button_card {
+    background-color: #0b08c4;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+article{
+    margin-top: auto;
+    width: 100%;
+}
+
+.Top {
+    width: 35px;
+    height: 35px;
+    background-color: #dd0a0a;
+    border-radius: 50%;
+    position: absolute;
+    top: 125px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    z-index: 9999;
+}
+
+.Top-text {
+    color: azure;
+}
+
+@media only screen and (max-width: 960px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .dropdown{
+        display: inline-block;
+    }
+}
